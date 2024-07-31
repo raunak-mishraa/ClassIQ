@@ -24,7 +24,7 @@ function Hero() {
           {/* /*bg-[#ECEDEF]*/ }
             <div className='h-full w-full relative'>
               <img src={hero_image} alt="hero image" className='relative z-10 w-full object-cover'/>
-              <img src={gradient} alt="" className=' absolute top-0 right-0 '/>
+              <img src={gradient} alt="" className='opacity-60 absolute top-0 right-0 '/>
             </div>
           </div>
       </div>

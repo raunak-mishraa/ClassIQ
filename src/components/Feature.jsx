@@ -13,7 +13,7 @@ function Feature() {
       <div className="flex pt-20 items-center justify-between h-[70vh]  gap-x-14">
         <div className="md:w-3/7 h-full overflow-hidden bg-[#ECEDEF] w-full flex justify-center items-end rounded-2xl relative">
           <div className="w-[70%] h-[30%] relative flex items-center justify-center">
-            <div className="absolute w-[80%] blur-3xl opacity-60 h-full rounded bg-[#C2F578] -top-5 z-0 " />
+            <div className="absolute w-[80%] blur-3xl opacity-30 h-full rounded bg-[#C2F578] -top-5 z-0 " />
             <div className=" bg-[#f5f5f5] shadow w-[80%] h-full rounded-tl-xl rounded-tr-xl z-10 flex items-center justify-center"></div>
           </div>
           <img
