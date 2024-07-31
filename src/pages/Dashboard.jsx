@@ -2,11 +2,12 @@ import React from 'react'
 import Container from '../components/container/Container'
 import dashboard from '../assets/dashboard.svg'
 import gradient from '../assets/gradient.png'
-import Courses from '../components/Courses'
+import Course from '../components/Course'
+
 function Dashboard() {
   return (
     <Container>
-        <div className='pt-8'>
+        <div className='mt-8'>
             <div className='bg-[#ECEDEF] rounded-lg pt-10 px-10 flex justify-between'>
               <div className='w-1/2'>
                 <h2 className='font-semibold text-xl text-[#373636]'>Enroll in your favorite courses </h2>
@@ -24,7 +25,7 @@ function Dashboard() {
                </div>
             </div>
         </div>
-        <Courses    />
+        <Course  />
     </Container>
   )
 }

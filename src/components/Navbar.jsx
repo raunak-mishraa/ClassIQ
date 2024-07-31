@@ -7,6 +7,7 @@ import { IoMenu } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
 import {auth, db} from './firebase'
 import {doc, getDoc} from 'firebase/firestore'
+import toast from "react-hot-toast";
 function Navbar() {
   const [user, setUser] = useState(null);
   const fetchUserData = async () => {
@@ -36,10 +37,10 @@ function Navbar() {
       setUser(null);
       localStorage.removeItem('isLoggedIn', true);
       navigate('/login');
-
-      
+      toast.success('Logged out successfully');
     } catch (error) {
       console.log(error);
+      toast.error(error.message);
     }
   }
 
@@ -52,7 +53,7 @@ function Navbar() {
             <img src={logo} alt="logo" className="h-10 hidden sm:block" />
             <img src={mlogo} alt="logo" className="h-10 md:hidden block" />
           </Link>
-          <div className="text-[#3E3E3E] hover:text-black transition-colors ease-linear ">Courses</div>
+          <Link to='/courses' className="text-[#3E3E3E] hover:text-black transition-colors ease-linear ">Courses</Link>
         </div>
         <IoMenu  className="text-2xl md:hidden block"/>
         <div className="md:flex gap-x-4 hidden">
