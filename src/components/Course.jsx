@@ -10,7 +10,7 @@ function Courses() {
           <h1 className="font-semibold text-lg text-[#3E3E3E]">All Courses</h1>
           <img src={arrow} alt="courses" className="h-3.5" />
         </div>
-        <div className="mt-10 h-full grid grid-cols-3 gap-9 w-full">
+        <div className="mt-10 h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-9 w-full">
           {/* <div className="bg-[#ECEDEF] w-full">
                 <div className="w-full h-44"></div>
                 <div className="w-full h-44"></div>

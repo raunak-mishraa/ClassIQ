@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <Container>
-        <div className='flex justify-between w-full pt-20'>
-            <div className='w-6/12'>
+        <div className='block sm:flex justify-between w-full pt-20'>
+            <div className='sm:w-6/12 w-full'>
                 <Link to='/'>
                     <img src={logo} alt="logo" className="opacity-80 h-9 hidden sm:block" />
                     <img src={mlogo} alt="logo" className="h-10 md:hidden block" />
@@ -24,7 +24,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='3/12'>
+            <div className='sm:3/12 sm:m-0 my-10'>
                 <h3 className='font-semibold text-[#373636] mb-2'>ClassIQ Bussiness</h3>
                 <ul className='text-[#373636] text-sm space-y-3'>
                     <li>Teach on ClassIQ</li>
@@ -33,7 +33,7 @@ function Footer() {
                     <li>Contact us</li>
                 </ul>
             </div>
-            <div className='3/12'>
+            <div className='sm:3/12'>
                 <h3 className='font-semibold text-[#373636] mb-2'>Careers</h3>
                 <ul className='text-[#373636] text-sm space-y-3'>
                     <li>Blog</li>
@@ -44,7 +44,7 @@ function Footer() {
         </div>
         <hr className='border-b border-[#EAEDEB] mt-10'/>
         <div>
-            <div className='flex justify-between items-center py-8'>
+            <div className='flex flex-col md:flex-row gap-y-4 justify-between items-center py-8'>
                 <p className='text-[#373636] text-sm text-center'>© 2024 ClassIQ. All rights reserved.</p>
                 <div className='space-x-3 flex'>
                     <Link className='bg-[#C2F578] p-2 rounded-sm'><AiFillInstagram /></Link>
